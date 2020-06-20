@@ -1,2 +1,4 @@
 # Team Fierce Evanto Photography
- An Envato template for photography
+Envato template for photography [Studio: Zuri-Studio] & [Personal-Portfolio: Zuri Ivy]
+
+
