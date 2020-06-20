@@ -1,14 +1,11 @@
-.body_nav{width: 100%;}
-
 .header_text h1{
-    font-family: 'qsbold';
+    font-family: 'qsbold' !important;
 }
 
 .header_line{
     display: block;
     width: 70px;
-    border-bottom: 1px solid #FF7A00;
-    margin-bottom: 50px;
+    border-bottom: 1.5px solid #FF7A00;
 }
 
 .gallery{
@@ -44,7 +41,7 @@
 }
 
 .img_container .img_cover p{
-    font-family: 'qsbold';
+    font-family: 'qsbold' !important;
 }
 
 .img_cover:hover{
@@ -66,27 +63,22 @@
 
 /* TABLET AND OTHER BIG SCREENS START*/
 @media only screen and (min-width: 768px){
-
     .gallery{
         grid-template-columns: auto auto;
-        width: 100%;
+        width: 90%;
     }
 
     .img_container{
-        width: 230px;
-        height: 165px;
-        margin-bottom: 20px;
+        width: 98%;
     }    
-
 }
 
 @media only screen and (min-width: 1024px){
     .gallery{
         width: 80%;
     }
-
     .img_container{
-        margin-bottom: 40px;
+        width: 99%;
     }
 }
 
@@ -99,11 +91,7 @@
 
 @media only screen and (min-width: 1400px){
     .gallery{
-        width: 75%;
-    }
-
-    .img_container{
-        margin-bottom: 30px;
+        width: 72%;
     }
 }
 /* TABLET AND OTHER BIG SCREENS END*/
