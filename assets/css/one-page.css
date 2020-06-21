@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.allcontentwrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.zuri{font-family: 'qsbold' !important;}
+
+.navonepage{
+    /* transform: translateX(-100%); */
+    transition: .4s ease-in-out;
+}
+
+.menu_wrapper{
+    position: absolute;
+    top: 0;
+}
+
+.menu_onepage{
+    width: 61%;
+}
+
+
+
+footer p{color:#7C7A7A !important;}
