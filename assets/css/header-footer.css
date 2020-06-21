@@ -92,7 +92,7 @@ footer{
 
     .main_nav{
         display: flex;
-        width: 35%;
+        width: 33%;
     }
 
     .nav_container{
@@ -101,6 +101,12 @@ footer{
 
     footer{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .main_nav{
+        width: 25%;
     }
 }
 
