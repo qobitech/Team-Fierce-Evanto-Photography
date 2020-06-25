@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin:0 ;
     padding: 0;
 }
 
@@ -15,6 +15,14 @@ body{
     position: relative;
 }
 
+.pg_section{
+    width: 100% !important;
+}
+
+.sub_section{
+    width: 80% !important;
+}
+
 .zuri{font-family: 'qsbold' !important;}
 
 .navonepage{
@@ -23,14 +31,108 @@ body{
 }
 
 .menu_wrapper{
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
 }
 
 .menu_onepage{
     width: 61%;
 }
 
+.content_container{
+    animation: fadein .4s ease-in;
+    animation-fill-mode: forwards;
+}
 
+@keyframes fadein{0%{opacity: 0;} 100%{opacity: 1;}}
+
+.home_img_container{overflow: hidden;}
+
+.section_title h5{font-family: 'qsmedium' !important; color: #FF7A00;}
+
+.header_text h1{font-family: 'qsmedium' !important;}
+
+.header_line{display: block;width: 70px;border-bottom: 2px solid #FF7A00;}
+
+.about_container p{line-height: 35px !important;font-family: 'qsmedium' !important;}
+
+.award_section,.services_section,.portfolio_section{
+    display: block;
+}
+
+.img_container{position: relative;}
+
+.img_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,.6);
+    transition: .4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    transition: .4s ease-in-out;
+}
+
+.img_cover div{
+    transition: 4s ease-in-out;
+}
+
+/* .img_cover:hover div{
+    animation: imgcovereffect .4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imgcovereffect{
+    0%{
+        transform: translateY(-10%); 
+    }
+    100%{
+        transform: translateY(-50%); 
+    }
+} */
+
+.img_cover p{text-transform: uppercase !important; font-family: 'qsbold' !important;}
+
+.service_title{color:#FF7A00 !important;}
+
+/* .rightsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+} */
+
+footer{display: block !important;}
 
 footer p{color:#7C7A7A !important;}
+
+
+@media only screen and (min-width:768px){
+    .menu_wrapper{
+        display: block;
+    }
+
+    .pg_section{
+        width: 1440px !important;
+    }
+
+    .sub_section{
+        width: 75% !important;
+    }
+
+    .award_section,.services_section,.portfolio_section
+    {display: grid;grid-template-columns: auto auto auto;justify-content: space-between !important;}
+    
+}
+
+@media only screen and (min-width:1024px){
+    .award_section,.portfolio_section{grid-template-columns: auto auto auto;}
+}
+
+@media only screen and (min-width:1100px){
+    .award_section{grid-template-columns: auto auto auto auto auto;}
+}
